@@ -1,0 +1,180 @@
+
+/* ############### Header Style starts here ############ */
+.header{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(255, 176, 7);
+    box-shadow: 0px 0px 20px -8px black;
+    display: flex;
+    align-items: center;
+}
+.heading-wrapper{
+    display: inline-block;
+    padding: 5px;
+    margin-left: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.note-icon{
+    font-size: 4rem;
+    margin-right: 10px;
+    color: white;
+}
+.header h1{
+    font-size: 2.3rem;
+    color: white;
+}
+
+/* ############### Header Style ends here ############ */
+
+
+
+
+
+/* ############# Note Taking Area Style Starts here ############## */
+.note-taking-area{
+    height: 230px;
+    width: 500px;
+    margin: auto;
+    margin-top: 30px;
+    border-radius: 10px;
+    padding: 20px 15px;
+    position: relative;
+    box-shadow: 2px 2px 20px -13px black;
+}
+.title{
+    width: 100%;
+    height: 20%;
+    font-size: 1.6rem;
+    font-weight: 700;
+    border: none;
+    outline: none;
+}
+.text{
+    width: 100%;
+    height: 40%;
+    resize: none;
+    overflow: auto;
+    margin-top: 30px;
+    font-size: 1rem;
+    color: black;
+    border: none;
+    outline: none;
+}
+.add-note-btn{
+    height: 60px;
+    width: 60px;
+    font-size: 3rem;
+    font-weight: 900;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 8px;
+    bottom: -30px;
+    border: none;
+    outline: none;
+    background-color: white;
+    color: rgb(255, 176, 7);
+    box-shadow: 3px 3px 20px -10px black;
+    cursor: pointer;
+}
+.add-note-btn:hover{
+    background-color: rgb(255, 176, 7);
+    color: white;
+}
+
+/* ############# Note Taking Area Style endss here ############## */
+
+
+
+
+
+
+/* ############## Notes lines Wrapper Style starts here ############## */
+.notes-list-wrapper{
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+    padding: 0px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.notes-list-wrapper::after{
+    content: '';
+    width: 20em;
+}
+.note{
+    height: 250px;
+    width: 330px;
+    box-shadow: 2px 2px 20px -13px black;
+    border-radius: 10px;
+    padding: 20px 15px;
+    position: relative;
+    margin-bottom: 50px;
+}
+.note-title{
+    width: 100%;
+    height: 50px;
+    overflow: auto;
+    font-size: 1.3rem;
+}
+.note-text{
+    margin-top: 10px;
+    width: 100%;
+    height: 100px;
+    overflow: auto;
+    font-size: 1.1rem;
+}
+.delete-note-btn{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    background-color: white;
+    color: rgb(255, 176, 7);
+    box-shadow: 3px 3px 20px -10px black;
+    cursor: pointer;
+    position: absolute;
+    right: 15px;
+    bottom: 10px;
+}
+.delete-note-btn:hover{
+    background-color: rgb(255, 176, 7);
+    color: white;
+}
+.delete-note-btn i{
+    font-size: 1.5rem;
+}
+
+
+
+
+
+
+
+
+
+/* ############# Responsive Style starts here ################ */
+@media only screen and (max-width: 720px){
+.notes-list-wrapper{
+    justify-content: center;
+    padding: 0px;
+}
+.notes-list-wrapper::after{
+    content: '';
+    width: 0px;
+}
+
+@media only screen and (max-width: 520px){
+.note-taking-area{
+    width: 330px;
+}
+}
+
+
+}
